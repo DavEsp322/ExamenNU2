@@ -1,0 +1,44 @@
+body{
+  font-family: 'dancing script', cursive;
+  background-color: #02010a;
+}
+
+header#encabezado{
+  height: 100px;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+h1#titulo{
+  color: white;
+  text-shadow: 2px 2px 1px #02010a;
+  float: left;
+  margin-left: 20px;
+}
+a.enlace{
+  color: white;
+  margin: 10px;
+}
+a:visited{
+  color: white;
+}
+a.active{
+  text-decoration: none;
+}
+
+#principal{
+  background-color: #82c3a6;
+  text-align: center;
+}
+#imgprincipal{
+  width: 90%;
+  padding: 1% 1%;
+}
+@media (min-width:900px) {
+  #menu-principal{
+    float: right;
+    line-height: 100px;
+    font-size: 20px;
+  }
+}
