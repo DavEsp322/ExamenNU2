@@ -36,8 +36,8 @@ a.active{
 #imgprincipal{
   width: 90%;
   margin: 1% 1%;
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px black;
+  border: 1px solid #02010a;
+  box-shadow: 2px 2px 2px #02010a;
 }
 
 #secundario{
@@ -45,21 +45,34 @@ a.active{
   border: 1px;
   display: flex;
   flex-flow: row wrap;
-  text-align: center;
 }
 
 .secundaria{
-  width: 40%;
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px black;
-  margin: 15px auto;
+  width: 50%;
+  margin: 4% auto;
 }
+.secundaria img{
+  border: 1px solid #02010a;
+  box-shadow: 2px 2px 2px #02010a;
+}
+#secizq{
+  transition: transform 1s;
+}
+
+#secizq:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid #02010a,
+}
+
 #secder{
   transition: transform 1s;
 }
 
 #secder:hover{
-  transform: rotate(10deg);
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid #02010a;
 }
 /*version escritorio*/
 @media (min-width:900px) {
@@ -86,5 +99,15 @@ a.active{
   .contenedor{
     width: 100%;
     margin: none;
+  }
+  #secundario{
+    flex-flow: column;
+    text-align: center;
+  }
+  .secundaria{
+    width: 90%;
+  }
+  .secundaria img{
+    width: 100%;
   }
 }
