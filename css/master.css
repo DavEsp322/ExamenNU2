@@ -19,7 +19,7 @@ h1#titulo{
 /*enlaces*/
 a.enlace{
   color: white;
-  padding: 10px;
+  margin: 10px;
 }
 a:visited{
   color: white;
@@ -27,6 +27,8 @@ a:visited{
 a.active{
   text-decoration: none;
 }
+
+
 
 /*contenedores e imagenes*/
 #principal{
@@ -74,6 +76,18 @@ a.active{
   box-shadow: 2px 2px 2px #82c3a6;
   border: 2px solid #02010a;
 }
+
+
+
+/*Pie de pagina*/
+footer{
+  background-color: #C6D5C5;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+
 /*version escritorio*/
 @media (min-width:900px) {
 
@@ -93,8 +107,19 @@ a.active{
     line-height: 100px;
     font-size: 20px;
   }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer div{
+    margin: 10px auto;
+  }
 }
 
+
+/*Version Movil*/
 @media (max-width:899px) {
   .contenedor{
     width: 100%;
@@ -109,5 +134,10 @@ a.active{
   }
   .secundaria img{
     width: 100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
   }
 }
