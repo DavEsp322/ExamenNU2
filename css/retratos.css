@@ -30,52 +30,13 @@ a.active{
 
 
 /*contenedores e imagenes*/
-#principal{
-  background-color: #82c3a6;
-  text-align: center;
-}
-#imgprincipal{
-  width: 90%;
-  margin: 1% 1%;
-  border: 1px solid #02010a;
-  box-shadow: 2px 2px 2px #02010a;
-}
 
-#secundario{
+#principal{
   background-color: #d5c75f;
   border: 1px;
   display: flex;
   flex-flow: row wrap;
 }
-
-.secundaria{
-  width: 50%;
-  margin: 4% auto;
-}
-.secundaria img{
-  border: 1px solid #02010a;
-  box-shadow: 2px 2px 2px #02010a;
-}
-#secizq{
-  transition: transform 1s;
-}
-
-#secizq:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: 2px solid #02010a,
-}
-
-#secder{
-  transition: transform 1s;
-}
-
-#secder:hover{
-  transform: translate(20px, -5px);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: 2px solid #02010a;
-}
-
 
 
 /*Pie de pagina*/
@@ -85,7 +46,17 @@ footer{
   border-radius: 0px 0px 10px 10px;
 }
 
+#principal img:nth-child(even){
+  -webkit-filter: grayscale(90%);
+}
 
+#desenfocada{
+  -webkit-filter: blur(10px);
+}
+
+#principal img:nth-child(3){
+  -webkit-filter: sepia(90%);
+}
 
 /*version escritorio*/
 @media (min-width:900px) {
@@ -119,6 +90,18 @@ footer{
   footer div{
     margin: 10px auto;
   }
+
+  #principal{
+    flex-direction: row;
+    text-align: center;
+  }
+
+#principal img{
+    height: 25%;
+    width: 25%;
+    margin: 3% 4%;
+    box-shadow: 2px 2px 2px #02010a;
+  }
 }
 
 
@@ -136,17 +119,6 @@ footer{
 
     padding-bottom: 10px;
   }
-  #secundario{
-    flex-flow: column;
-    text-align: center;
-  }
-  .secundaria{
-    width: 90%;
-  }
-  .secundaria img{
-    width: 100%;
-  }
-
   footer{
     display: flex;
     flex-direction: column;
@@ -154,4 +126,16 @@ footer{
   #derechos{
     margin-bottom: 15%;
   }
+
+  #principal{
+    flex-direction: column;
+    text-align: center;
+  }
+
+#principal img{
+    width: 90%;
+    margin: 2% auto;
+  }
+
+
 }
