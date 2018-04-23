@@ -64,7 +64,7 @@ a.active{
 #secizq:hover{
   transform: rotate(10deg);
   box-shadow: 2px 2px 2px #82c3a6;
-  border: 2px solid #02010a,
+  border: 2px solid #02010a;
 }
 
 #secder{
@@ -141,7 +141,6 @@ footer{
 @media (max-width:899px) {
   .contenedor{
     width: 100%;
-    margin: none;
   }
   #encabezado{
     text-align: center;

@@ -124,7 +124,6 @@ footer{
 @media (max-width:899px) {
   .contenedor{
     width: 100%;
-    margin: none;
   }
   #encabezado{
     text-align: center;
